@@ -1,0 +1,14 @@
+
+
+group 'io.github.abitgen'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    task wrapper(type: Wrapper) {
+        gradleVersion = '5.2.1'
+    }
+}
