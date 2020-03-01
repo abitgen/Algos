@@ -21,11 +21,9 @@ fun main() {
 
 fun returnPages(itemList: List<List<String>>, totalAttributesPerItem: Int, sortParameter: Int, sortOrder: Int, perPage:Int, pageNum:Int) {
 
-    val sortedList = if (sortOrder == 1)
-        itemList.sortedByDescending { it[sortParameter] }
-    else if (sortOrder == 0)
-        itemList.sortedBy { it[sortParameter] }
-    else listOf()
+    val sortedList = if (sortOrder == 1) itemList.sortedByDescending { it[sortParameter] }
+                     else if (sortOrder == 0) itemList.sortedBy { it[sortParameter] }
+                     else listOf()
 
     val totalPages = sortedList.size / perPage
     var outputList = listOf<List<String>>()
@@ -42,6 +40,6 @@ fun returnPages(itemList: List<List<String>>, totalAttributesPerItem: Int, sortP
     println(sortedList.joinToString("\n"))
 
     println("")
-    println(">>>>> Sorted Items at PageNum$pageNum")
+    println(">>>>> Sorted Items at PageNum $pageNum")
     println(outputList.joinToString("\n"))
 }
