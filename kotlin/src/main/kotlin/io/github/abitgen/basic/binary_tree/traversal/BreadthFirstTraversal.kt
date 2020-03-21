@@ -8,11 +8,22 @@ typealias IntNode = BinaryNode<Int>
 class BreadthFirstTraversal {
     val queue: Deque<IntNode> = LinkedList<IntNode>()
 
-    fun bft(rootNode: IntNode) {
+    fun bftPrint(rootNode: IntNode) {
+        bft(rootNode, ::println)
+    }
+
+    fun bftSquare(rootNode: IntNode) {
+        bft(rootNode){
+            println(it*it)
+        }
+    }
+
+    private fun <T> bft(rootNode: IntNode, process:(Int)->T) {
         queue.add(rootNode)
         while (queue.isNotEmpty()) {
             val intnode = queue.removeFirst()
-            println(intnode.data)
+
+            process(intnode.data)
 
             intnode.leftNode?.let {
                 queue.add(intnode.leftNode)
@@ -39,7 +50,11 @@ fun main() {
                 IntNode(6)))
     )
 
-    BreadthFirstTraversal().bft(rootNode)
+    val bft = BreadthFirstTraversal()
+
+    bft.bftPrint(rootNode)
+    println()
+    bft.bftSquare(rootNode)
 }
 
 
