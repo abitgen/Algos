@@ -3,6 +3,8 @@
 .gradle
 /build/
 /kotlin/build
+/.idea
+!/.idea/workspace.xml
 
 # Ignore Gradle GUI config
 gradle-app.setting

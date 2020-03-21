@@ -1,8 +1,6 @@
 package io.github.abitgen.basic.binary_tree
 
-import io.github.abitgen.basic.binary_tree.traversal.IntNode
-
-class BinaryNode<T>(val data:T, var leftNode: BinaryNode<T>?=null, var rightNode:BinaryNode<T>?=null) {
+class BinaryNode<T>(val data:T, var rightNode: BinaryNode<T>?=null, var leftNode:BinaryNode<T>?=null) {
     internal fun setLeft(left: BinaryNode<T>){
         this.leftNode = left
     }

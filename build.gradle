@@ -1,5 +1,4 @@
 
-
 group 'io.github.abitgen'
 version '1.0-SNAPSHOT'
 
@@ -8,7 +7,18 @@ repositories {
 }
 
 subprojects {
+    apply plugin: 'idea'
+
     task wrapper(type: Wrapper) {
         gradleVersion = '5.2.1'
     }
+
+    idea {
+        module {
+            downloadJavadoc = true
+            downloadSources = true
+        }
+    }
+
 }
+
