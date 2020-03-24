@@ -3,8 +3,6 @@ package io.github.abitgen.basic.binary_tree.traversal
 import io.github.abitgen.basic.binary_tree.*
 import java.util.*
 
-typealias IntNode = BinaryNode<Int>
-
 class BreadthFirstTraversal {
     val queue: Deque<IntNode> = LinkedList<IntNode>()
 
@@ -36,20 +34,7 @@ class BreadthFirstTraversal {
 }
 
 fun main() {
-    val rootNode = IntNode(
-        0,
-        IntNode(
-            1,
-            IntNode(3),
-            IntNode(99)),
-        IntNode(
-            2,
-            IntNode(
-                4,
-                IntNode(5),
-                IntNode(6)))
-    )
-
+    val rootNode = sampleBinaryTreeIntData
     val bft = BreadthFirstTraversal()
 
     bft.bftPrint(rootNode)

@@ -1,9 +1,5 @@
 package io.github.abitgen.basic.binary_tree.traversal
 
-import io.github.abitgen.basic.binary_tree.BinaryNode
-
-typealias CharNode = BinaryNode<Char>
-
 class DepthFirstTraversal {
 
     fun dftPreOrderPrint(node: CharNode?){
@@ -40,37 +36,9 @@ class DepthFirstTraversal {
     }
 }
 
-/**
- * rotate the code rootNode to 90 deg to get a below tree diagram.
- * Each indentation refers to each increasing level.
- * rightNode is the second parameter, leftNode is the last one, to get the tree as shown.
- *
- *                   A
- *                /    \
- *               E      B
- *              / \    / \
- *             -  F   D  C
- *               / \
- *              J  G
- *                / \
- *               I  H
- */
+
 fun main(){
-    val rootNode =
-        CharNode(
-        'A',
-            CharNode(
-                'B',
-                CharNode('C'),
-                CharNode('D')),
-            CharNode(
-                'E',
-                CharNode(
-                    'F',
-                    CharNode('G',
-                        CharNode('H'),
-                        CharNode('I')),
-                    CharNode('J'))))
+    val rootNode = sampleBinaryTreeCharData
 
     val dft = DepthFirstTraversal()
     println(">>>>>>> Pre Order")
