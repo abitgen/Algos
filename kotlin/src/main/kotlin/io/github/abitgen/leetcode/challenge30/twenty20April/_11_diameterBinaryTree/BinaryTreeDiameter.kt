@@ -4,12 +4,8 @@ import io.github.abitgen.basic.binary_tree.BinaryNode
 import io.github.abitgen.basic.binary_tree.traversal.sampleBinaryTreeCharData
 import io.github.abitgen.basic.binary_tree.traversal.sampleBinaryTreeCharData2
 import io.github.abitgen.basic.binary_tree.traversal.sampleBinaryTreeNodeData3
+import io.github.abitgen.leetcode.common.TreeNode
 import kotlin.math.max
-
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
 
 object BinaryTreeDiameter {
     fun diameterOfBinaryTree(root: TreeNode?): Int {
