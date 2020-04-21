@@ -14,39 +14,46 @@ For custom testing purposes you're given the binary matrix mat as input in the f
 
  
 
-Example 1:
-
-
+**Example 1:**
 
 Input: mat = [[0,0],[1,1]]
+
 Output: 0
-Example 2:
 
 
+**Example 2:**
 
 Input: mat = [[0,0],[0,1]]
+
 Output: 1
-Example 3:
 
-
+**Example 3:**
 
 Input: mat = [[0,0],[0,0]]
+
 Output: -1
-Example 4:
 
-
+**Example 4:**
 
 Input: mat = [[0,0,0,1],[0,0,1,1],[0,1,1,1]]
+
 Output: 1
  
 
 #### Constraints:
 
+```
 1 <= mat.length, mat[i].length <= 100
+
 mat[i][j] is either 0 or 1.
+
 mat[i] is sorted in a non-decreasing way.
+
+```
    
    #### Hint #1  
 1. (Binary Search) For each row do a binary search to find the leftmost one on that row and update the answer.
-   ##### Hint #2  
+   
+   
+   #### Hint #2  
 2. (Optimal Approach) Imagine there is a pointer p(x, y) starting from top right corner. p can only move left or down. If the value at p is 0, move down. If the value at p is 1, move left. Try to figure out the correctness and time complexity of this algorithm.
