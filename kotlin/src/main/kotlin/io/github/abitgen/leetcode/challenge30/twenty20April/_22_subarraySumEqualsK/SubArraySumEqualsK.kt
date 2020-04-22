@@ -64,4 +64,10 @@ fun main(){
         intArrayOf(1,1,1,1,2), 2
     ))
 
+    println(SubArraySumEqualsK.subarraySum(
+        intArrayOf(1,3,3,3,2,1,0,-3,9), 9
+    ))
+
+
+
 }
