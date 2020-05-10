@@ -35,7 +35,6 @@ object FindTheTownJudge {
         return -1
     }
 }
-}
 
 fun main(){
     println(FindTheTownJudge.findJudge(4,
