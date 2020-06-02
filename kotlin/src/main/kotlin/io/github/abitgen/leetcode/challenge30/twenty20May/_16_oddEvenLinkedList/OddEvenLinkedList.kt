@@ -1,6 +1,6 @@
 package io.github.abitgen.leetcode.challenge30.twenty20May._16_oddEvenLinkedList
 
-import io.github.abitgen.leetcode.challenge30.twenty20April._8_middleLinkedlist.ListNode
+import io.github.abitgen.leetcode.common.ListNode
 import io.github.abitgen.leetcode.common.utils.toListNode
 
 object OddEvenLinkedList {
