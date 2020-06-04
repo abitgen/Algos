@@ -1,7 +1,9 @@
-> TL:DR Sort based on savings
+# Approach 1
+
+> TL;DR Sort based on savings
 
 
-#Why?
+# Why?
 
 Higher the savings, the decision to choose the minimum (lower) cost is high. ` costCityA - costCityB `
 
@@ -57,3 +59,7 @@ To verify check The difference ( savings ) of each element's cityA with cityB co
 
 Finally,
 extracting and summing cityA's cost in first half of order with cityB's cost in second half.🚀   
+
+# Approach 2
+
+Explanation - https://leetcode.com/problems/two-city-scheduling/discuss/667786/Java-or-C%2B%2B-or-Python3-or-With-detailed-explanation
