@@ -40,7 +40,7 @@ object RemoveKDigits {
          * If the above operation is complete but still there might be case where not all elements matching k are removed.
          * So In that case we reverse the iteration. And proceed Popping top element and comparing with next top.
          *
-         * This case will run when there is ascending sorted sequqence of numbers present the string.
+         * This case will run when there is ascending sorted sequence of numbers present the string.
          */
         while(removeCount!=0 && stack.isNotEmpty()){
             val item = stack.pop()

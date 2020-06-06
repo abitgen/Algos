@@ -17,7 +17,7 @@ object CheckPointsAreInStraightLine {
 
     fun checkStraightLine(coordinates: Array<IntArray>): Boolean {
         if(coordinates.size <= 2) return true
-        val equationPair = CheckPointsAreInStraightLine.findEquation( arrToPair(coordinates[0]), arrToPair(coordinates[1]))
+        val equationPair = findEquation( arrToPair(coordinates[0]), arrToPair(coordinates[1]))
         for (coordinate in coordinates){
             val coord = arrToPair(coordinate)
             if(coord.second != equationPair.second*coord.first + equationPair.first)

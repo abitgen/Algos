@@ -1,3 +1,5 @@
+package io.github.abitgen.leetcode.challenge30.twenty20May._5_firstUniqueCharacter
+
 import java.util.*
 
 object FirstUniqueCharacter{

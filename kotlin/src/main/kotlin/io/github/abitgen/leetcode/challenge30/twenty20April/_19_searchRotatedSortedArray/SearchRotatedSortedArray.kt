@@ -1,7 +1,5 @@
 package io.github.abitgen.leetcode.challenge30.twenty20April._19_searchRotatedSortedArray
 
-import kotlin.math.max
-
 object SearchRotatedSortedArray {
     fun search(nums: IntArray, target: Int): Int {
         if (nums.isEmpty()) return -1

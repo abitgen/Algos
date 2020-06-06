@@ -1,6 +1,5 @@
 package io.github.abitgen.basic.binary_tree.traversal
 
-import io.github.abitgen.basic.binary_tree.*
 import java.util.*
 
 class BreadthFirstTraversal {
