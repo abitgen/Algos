@@ -1,4 +1,4 @@
-package io.github.abitgen.leetcode.challenge30._10_searchInsertPosition
+package io.github.abitgen.leetcode.challenge30.twenty20June._10_searchInsertPosition
 
 import java.util.*
 
