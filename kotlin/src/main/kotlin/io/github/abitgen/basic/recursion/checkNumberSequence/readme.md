@@ -1,0 +1,1 @@
+Given an array, write a recursive function to check if the elements are in sequence.
