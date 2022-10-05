@@ -1,6 +1,5 @@
 package io.github.abitgen.leetcode.challenge30.twenty20April._2_happyNumber
 
-import com.sun.org.apache.xpath.internal.operations.Bool
 import io.github.abitgen.leetcode.challenge30.twenty20April._2_happyNumber.HappyNumber.isHappy
 import kotlin.math.log10
 

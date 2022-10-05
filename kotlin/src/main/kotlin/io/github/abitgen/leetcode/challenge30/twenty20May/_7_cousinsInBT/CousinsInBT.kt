@@ -1,8 +1,6 @@
 package io.github.abitgen.leetcode.challenge30.twenty20May._7_cousinsInBT
 
 import io.github.abitgen.leetcode.common.TreeNode
-import sun.reflect.generics.tree.Tree
-
 object CousinsInBT {
     /**
      * While returning checking both x, y parent nodes are not the same,
